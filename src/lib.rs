@@ -11,6 +11,7 @@ pub use locale::*;
 pub use number::*;
 pub use plugin_com::*;
 pub use string::*;
+pub use uuid::*;
 
 
 pub mod array;
@@ -22,3 +23,4 @@ pub mod locale;
 pub mod number;
 pub mod plugin_com;
 pub mod string;
+pub mod uuid;
