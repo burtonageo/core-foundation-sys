@@ -14,6 +14,7 @@ pub use number::*;
 pub use runloop::*;
 pub use string::*;
 pub use set::*;
+pub use uuid::*;
 
 
 pub mod array;
@@ -27,3 +28,4 @@ pub mod number;
 pub mod runloop;
 pub mod string;
 pub mod set;
+pub mod uuid;
