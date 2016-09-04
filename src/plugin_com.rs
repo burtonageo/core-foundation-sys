@@ -1,9 +1,8 @@
 // This file is a literal translation of the CFPluginCOM.h header, which has this issue.
 #![allow(overflowing_literals)]
 
-use libc::{c_ulong, c_void};
-
-use ::{CFUUIDBytes, kCFAllocatorDefault, SInt32, UInt32};
+use libc::c_void;
+use ::{CFUUIDBytes, SInt32, UInt32};
 
 pub type HRESULT = SInt32;
 pub type ULONG = UInt32;
