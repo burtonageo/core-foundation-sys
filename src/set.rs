@@ -42,7 +42,7 @@ extern {
     pub fn CFSetGetCountOfValue(theSet: CFSetRef, value: *const c_void) -> CFIndex;
     pub fn CFSetGetValue(theSet: CFSetRef, value: *const c_void) -> *const c_void;
     pub fn CFSetGetValueIfPresent(theSet: CFSetRef, candidate: *const c_void, value: *const *mut c_void) -> Boolean;
-    pub fn CFSetGetValues(theSet: CFSetRef, values: *const *mut c_void);
+    pub fn CFSetGetValues(theSet: CFSetRef, values: *mut *mut c_void);
 
     pub fn CFSetApplyFunction(theSet: CFSetRef, applier: CFSetApplierFunction, context: *mut c_void);
 
