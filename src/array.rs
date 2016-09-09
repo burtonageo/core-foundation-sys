@@ -35,7 +35,7 @@ extern "C" {
 
     pub fn CFArrayGetTypeID() -> CFTypeID;
 
-    pub fn CFArrayCreate(allocator: CFAllocatorRef, values: *const *const c_void, numValues: CFIndex, callbacks: *const CFArrayCallBacks) -> CFArrayRef;
+    pub fn CFArrayCreate(allocator: CFAllocatorRef, values: *mut *mut c_void, numValues: CFIndex, callbacks: *const CFArrayCallBacks) -> CFArrayRef;
     pub fn CFArrayCreateCopy(allocator: CFAllocatorRef, theArray: CFArrayRef) -> CFArrayRef;
     pub fn CFArrayCreateMutable(allocator: CFAllocatorRef, capacity: CFIndex, callBacks: *const CFArrayCallBacks) -> CFMutableArrayRef;
     pub fn CFArrayCreateMutableCopy(allocator: CFAllocatorRef, capacity: CFIndex, theArray: CFArrayRef) -> CFMutableArrayRef;
